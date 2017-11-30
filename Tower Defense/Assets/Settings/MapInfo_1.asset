@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1cd7915920d8d1408c8293c20eb3532, type: 3}
+  m_Name: MapInfo_1
+  m_EditorClassIdentifier: 
+  xSize: 5
+  ySize: 5
+  PathZone:
+  - x: 0
+    y: 0
+  - x: 1
+    y: 0
+  - x: 2
+    y: 0
+  - x: 2
+    y: 1
+  - x: 2
+    y: 2
+  - x: 3
+    y: 2
+  - x: 4
+    y: 2
+  - x: 4
+    y: 3
+  - x: 4
+    y: 4
+  TileTypes:
+  - {fileID: 1853542400578032, guid: c1923bf84601f80499389ec5aded948f, type: 2}
+  - {fileID: 1188777339641402, guid: f214cd3a468de0446ac3bcc5b21186f5, type: 2}
