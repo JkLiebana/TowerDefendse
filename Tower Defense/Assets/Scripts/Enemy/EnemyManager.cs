@@ -25,7 +25,8 @@ public class EnemyManager : MonoBehaviour {
 	Vector3 newPosition;
 	void MoveUnit(Enemy enemyUnit)
 	{
-		newPosition = Vector3.MoveTowards(enemyUnit.transform.position, enemyUnit.Target.position, Time.deltaTime * unitSpeed);
+
+		newPosition = Vector3.MoveTowards(enemyUnit.transform.position, new Vector3(enemyUnit.Target.x, 0, enemyUnit.Target.y), Time.deltaTime * unitSpeed);
 		newPosition.y = 0.75f;
 		enemyUnit.transform.position = newPosition;
 

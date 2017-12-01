@@ -9,6 +9,8 @@ public class MainManager : Singleton<MainManager> {
 	public PoolingManager _PoolingManager;
 	public LevelManager _LevelManager;
 
+	public PlayerController _PlayerController;
+
 	void Start()
 	{
 		_PoolingManager.Initialize();

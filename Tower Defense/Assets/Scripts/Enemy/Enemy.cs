@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 
 	private int TileIndex = 0;
-	public Transform Target;
+	public Tile Target;
 
 	public bool canMove = false;
 

@@ -6,7 +6,7 @@ public class MapGenerator : MonoBehaviour {
 
 	public MapInfo _MapInfo;
 
-	public List<Transform> Path;
+	public List<Tile> Path;
 	
 	public void CreateMap()
 	{
@@ -25,8 +25,15 @@ public class MapGenerator : MonoBehaviour {
 				tempTile.transform.position = new Vector3(i, 0f, j);
 				tempTile.transform.SetParent(gameObject.transform);
 
+				var tileInfo = tempTile.GetComponent<Tile>();
+
+				tileInfo.x = i;
+				tileInfo.y = j;
+
 				if(_MapInfo.tileType[i,j] == 1)
-					Path.Add(tempTile.transform);
+				{
+					Path.Add(tileInfo);
+				}
 			}
 		}
 	}
